@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- கருப்பு பின்னணி சதுரம் -->
+  <rect width="32" height="32" rx="8" fill="black"/>
+  <!-- வெள்ளை நிறத்தில் T எழுத்து -->
+  <path d="M7 8H25V11H18.5V25H13.5V11H7V8Z" fill="white"/>
+</svg>
