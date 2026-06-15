@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider"; // ThemeProvider-ஐ Import செய்யவும்
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,19 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
-  );
-}
 export const metadata = {
   title: 'ThanujanDev',
   description: 'Software Developer Portfolio',
@@ -32,3 +20,21 @@ export const metadata = {
     icon: '/favicon.svg',
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    // suppressHydrationWarning-ஐ இங்கே சேர்க்கவும்
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* ThemeProvider-க்குள் children-ஐ வைக்கவும் */}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

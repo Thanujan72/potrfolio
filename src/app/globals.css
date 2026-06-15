@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
   body {
-    @apply bg-black text-white font-sans; /* Dark theme-க்கு ஏற்ப */
+    @apply bg-white text-black font-sans antialiased;
   }
+}
+
+/* இது உங்கள் கார்டுகள் மற்றும் மற்ற செக்ஷன்களில் உள்ள பிழைகளைத் தவிர்க்கும் */
+img {
+  max-width: 100%;
+  height: auto;
 }
