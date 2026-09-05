@@ -1,3 +1,29 @@
 export default function About() {
-  return <section id="about" className="border-y border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900/40"><div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-28"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">About me</p><div><h2 className="max-w-2xl text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-white">Focused on useful experiences, from first idea to final interface.</h2><div className="mt-7 max-w-3xl space-y-5 text-base leading-8 text-zinc-600 sm:text-lg dark:text-zinc-400"><p>I am a software developer focused on creating clear, responsive web experiences that are practical for the people who use them.</p><p>My approach combines problem solving with thoughtful implementation: understand the need, shape a useful solution, and build it with clean, maintainable code.</p></div></div></div></section>;
+  return (
+    <section
+      id="about"
+      className="border-y border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900/40">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-28">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+          About me
+        </p>
+        <div>
+          <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-white">
+            Focused on useful experiences, from first idea to final interface.
+          </h2>
+          <div className="mt-7 max-w-3xl space-y-5 text-base leading-8 text-zinc-600 sm:text-lg dark:text-zinc-400">
+            <p>
+              I am a software developer focused on creating clear, responsive
+              web experiences that are practical for the people who use them.
+            </p>
+            <p>
+              My approach combines problem solving with thoughtful
+              implementation: understand the need, shape a useful solution, and
+              build it with clean, maintainable code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

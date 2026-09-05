@@ -10,5 +10,16 @@ import Skills from "@/components/Skills";
 import WhatIDo from "@/components/WhatIDo";
 
 export default function Home() {
-  return <main><Navbar /><Hero /><About /><WhatIDo /><Process /><Skills /><CaseStudy /><Projects /><Contact /><Footer /></main>;
+  return <main>
+    <Navbar />
+    <Hero />
+    <About />
+    <WhatIDo />
+    <Process />
+    <Skills />
+    <CaseStudy />
+    <Projects />
+    <Contact />
+    <Footer />
+  </main>;
 }
