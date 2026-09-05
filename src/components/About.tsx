@@ -1,23 +1,3 @@
 export default function About() {
-  const steps = ["Problem", "Challenge", "Solution", "Implementation", "Result", "Learning"];
-
-  return (
-    <section id="about" className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold mb-10">My Approach</h2>
-      
-      {/* grid-cols-1 மொபைல், sm:grid-cols-2, md:grid-cols-3 டெஸ்க்டாப் */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {steps.map((step, index) => (
-          <div 
-            key={index} 
-            className="p-6 border border-gray-200 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
-          >
-            <span className="text-gray-400 font-bold text-2xl mb-2 block">0{index + 1}</span>
-            <h3 className="text-lg font-bold uppercase text-black">{step}</h3>
-            <div className="w-10 h-1 bg-gray-200 mt-3" />
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+  return <section id="about" className="border-y border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900/40"><div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-28"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">About me</p><div><h2 className="max-w-2xl text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-white">Focused on useful experiences, from first idea to final interface.</h2><div className="mt-7 max-w-3xl space-y-5 text-base leading-8 text-zinc-600 sm:text-lg dark:text-zinc-400"><p>I am a software developer focused on creating clear, responsive web experiences that are practical for the people who use them.</p><p>My approach combines problem solving with thoughtful implementation: understand the need, shape a useful solution, and build it with clean, maintainable code.</p></div></div></div></section>;
 }

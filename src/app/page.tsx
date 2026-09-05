@@ -1,22 +1,14 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
 import CaseStudy from "@/components/CaseStudy";
-;
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Process from "@/components/Approach";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import WhatIDo from "@/components/WhatIDo";
 
 export default function Home() {
-  return (
-    <main className="scroll-smooth">
-      <Navbar />
-      <Hero />
-      <About />
-      <CaseStudy />
-      <Skills />
-      <Projects />
-      <Contact />
-    </main>
-  );
+  return <main><Navbar /><Hero /><About /><WhatIDo /><Process /><Skills /><CaseStudy /><Projects /><Contact /><Footer /></main>;
 }

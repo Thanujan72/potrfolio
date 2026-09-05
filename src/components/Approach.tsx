@@ -1,0 +1,5 @@
+const steps = ["Problem", "Challenge", "Solution", "Implementation", "Result", "Learning"];
+
+export default function Process() {
+  return <section id="process" className="border-y border-zinc-200 bg-zinc-100/70 dark:border-zinc-800 dark:bg-zinc-900/30"><div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28"><div className="max-w-2xl"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">How I work</p><h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">My development process.</h2><p className="mt-4 leading-7 text-zinc-600 dark:text-zinc-400">A structured way to move from a real need to a considered digital solution.</p></div><ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{steps.map((step, index) => <li key={step} className="rounded-xl border border-zinc-200 bg-zinc-50 p-6 transition hover:-translate-y-1 hover:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-600"><span className="text-sm font-semibold text-zinc-400">0{index + 1}</span><h3 className="mt-8 text-lg font-bold">{step}</h3></li>)}</ol></div></section>;
+}

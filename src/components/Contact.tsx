@@ -1,24 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
-  return (
-    <section id="contact" className="py-20 px-6 md:px-10 max-w-6xl mx-auto border-t border-gray-200">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-        <div className="text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Let's work together.</h2>
-          <p className="text-gray-600">Open for new opportunities and collaborations.</p>
-        </div>
-        
-        <div className="flex gap-6">
-          <a href="https://github.com/Thanujan72" target="_blank" className="text-3xl hover:text-gray-600 transition">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" className="text-3xl hover:text-blue-700 transition">
-            <FaLinkedin />
-          </a>
-        </div>
-      </div>
-    </section>
-  );
+  return <section id="contact" className="border-t border-zinc-200 bg-zinc-950 text-white dark:border-zinc-800"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-10 px-5 py-20 sm:px-8 md:flex-row md:items-end lg:px-10 lg:py-28"><div className="max-w-2xl"><p className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400">Get in touch</p><h2 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">Have a project in mind?<br />Let&apos;s build something useful together.</h2><p className="mt-6 text-lg leading-8 text-zinc-400">Open for new opportunities and collaborations.</p></div><div className="flex gap-3"><a href="https://github.com/Thanujan72" target="_blank" rel="noreferrer" aria-label="GitHub" className="rounded-full border border-zinc-700 p-4 text-xl transition hover:-translate-y-0.5 hover:border-zinc-300 hover:bg-zinc-900"><FaGithub /></a><a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="rounded-full border border-zinc-700 p-4 text-xl transition hover:-translate-y-0.5 hover:border-zinc-300 hover:bg-zinc-900"><FaLinkedin /></a></div></div></section>;
 }
-

@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-white text-black font-sans antialiased;
+    @apply bg-zinc-50 font-sans text-zinc-950 antialiased transition-colors duration-300 dark:bg-zinc-950 dark:text-zinc-50;
+  }
+
+  ::selection {
+    @apply bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900;
   }
 }
 
-/* இது உங்கள் கார்டுகள் மற்றும் மற்ற செக்ஷன்களில் உள்ள பிழைகளைத் தவிர்க்கும் */
 img {
   max-width: 100%;
   height: auto;
